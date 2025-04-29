@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>THE TEAM</title>
+</head>
+<!--Contenido Principal-->
+<body class="porcinos" data-bs-spy="scroll" data-bs-target="navSpyPorcinos" tabindex="0">
+<!--Hacemos la barra de navegación con Scrollspy-->
+<nav class="navbar fixed-top navbar-expand-lg porcinos" data-bs-theme="dark">
+    <div class="container-fluid justify-content-between">
+            <a class="navbar-brand mx-auto" href="./index.html">
+                PORCINOS FC
+            </a>
+        <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navSpyPorcinos" aria-controls="navSpyPorcinos" aria-expanded="false" aria-label="Mostrar navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navSpyPorcinos">
+            <ul class="navbar-nav ms-auto me-4 nav-underline" id="navSpyPorcinosList">
+                <li class="nav-item">
+                    <a class="nav-link" href="#Favoritos">Plantilla</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Nuevos">Fichajes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!--Hacemos un Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide mt-5">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/Escudo-2.jpg" class="d-block w-100" alt="Escudo-2">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/Equipo-2.jpg" class="d-block w-100" alt="Equipo-2">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/Campeones.jpg" class="d-block w-100" alt="Campeones">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Plantilla de Jugadores-->
+    <main class="container mt-4">
+
+        <h4 id="Favoritos" class="text-light">#Plantilla</h4>
+
+        <!--Primer Contenedor flex de imagenes-->
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/Blanco.jpg" alt="Blanco" width="150px" data-bs-toggle="modal" data-bs-target="#Antonio">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">Antonio Blanco</h4>
+                    <hr>
+                    <h5>Delantero</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#datos">
+                        Más info
+                    </button>
+                </div>
+            </div>
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle" >
+                    <img src="./img/Carlito.jpg" alt="Carlitos" width="150px" data-bs-toggle="modal" data-bs-target="#Carlitos">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">Carlitos González</h4>
+                    <hr>
+                    <h5>Mediocentro</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mas">
+                        Más info
+                    </button>
+                </div>
+            </div>
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/Cichero.jpg" alt="Cichero" width="150px">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">Gabriel Cichero</h4>
+                    <hr>
+                    <h5>Defensa</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#data">
+                        Más info
+                    </button>
+                </div>
+            </div>
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/David.jpg" alt="David" width="150px">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">David Cárdenas</h4>
+                    <hr>
+                    <h5>Defensa</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#informa">
+                        Más info
+                    </button>
+                </div>
+            </div>
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/Killian.jpg" alt="Kilian" width="150px">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">Kilian Honorato</h4>
+                    <hr>
+                    <h5>Mediocentro</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#infor">
+                        Más info
+                    </button>
+                </div>
+            </div>
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/Lao.jpg" alt="Lao" width="150px">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">Raúl Lao</h4>
+                    <hr>
+                    <h5>Delantero</h5>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#info">
+                        Más info
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <h4 id="Nuevos" class="text-light">#Fichajes</h4>
+
+        <div class="d-flex flex-wrap flex-row justify-content-center gap-4">
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/Nadir.jpg" alt="Nadir" width="150px">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">Nadir Louah</h4>
+                    <hr>
+                    <h5>Mediocentro</h5>
+                    <!--Le añadimos un popover-->
+                    <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="popover" data-bs-title="Nadir" data-bs-content="Nuevo fichaje para reforzar el mediocentro, procedente de Ultimate Móstoles">Fichaje</button>
+                </div>
+            </div>
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/Segovia.jpg" alt="Segovia" width="150px">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">José Segovia</h4>
+                    <hr>
+                    <h5>Defensa</h5>
+                    <!--Le añadimos un popover-->
+                    <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="popover" data-bs-title="José Segovia" data-bs-content="Nuevo fichaje para reforzar la defensa, procedente de Saiyans FC">Fichaje</button>
+                </div>
+            </div>     
+            <!--Contenedor de imagen-->
+            <div class="d-flex mb-3 p-2 bg-white rounded shadow" style="width: 360px;">
+                <!--Imagen-->
+                <div class="border border-dark-subtle">
+                    <img src="./img/Uri.jpg" alt="Uri" width="150px">
+                </div>
+                <!--Texto-->
+                <div class="ps-1 pe-3 ms-2 me-3 bg-light text-dark align-self-center">
+                    <h4 class="mt-2">Uri Pons</h4>
+                    <hr>
+                    <h5>Portero</h5>
+                    <!--Le añadimos un popover-->
+                    <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="popover" data-bs-title="Uri Pons" data-bs-content="Nuevo fichaje para reforzar la porteria, procedente de Xbuyer FC">Fichaje</button>
+                </div>
+            </div>
+        </div>
+    </main>
+        <!--Añadimos un Modal a una Imagen-->
+        <div class="modal fade" id="datos" tabindex="-1" aria-labelledby="datos" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="datos">Antonio Blanco</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/Blanco.jpg" class="img-fluid mb-3" alt=" Blanco">
+                        <p><strong>Edad:</strong> 24 años</p>
+                        <p><strong>Trayectoria:</strong> Ex jugador del Ultimate Móstoles. Destaca por su velocidad y definición.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Carlito-->
+        <div class="modal fade" id="mas" tabindex="-1" aria-labelledby="mas" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="mas">Carlitos González</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/Carlito.jpg" class="img-fluid mb-3" alt=" Carlito">
+                        <p><strong>Edad:</strong> 22 años</p>
+                        <p><strong>Trayectoria:</strong> Ex jugador de Saiyans fc. Destaca por su agilidad y velocidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Cichero-->
+        <div class="modal fade" id="data" tabindex="-1" aria-labelledby="data" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="data">Gabriel Cichero</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/Cichero.jpg" class="img-fluid mb-3" alt=" Cichero">
+                        <p><strong>Edad:</strong> 34 años</p>
+                        <p><strong>Trayectoria:</strong> Ex jugador de Troncos FC Destaca por su robustez y corpulencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal David-->
+        <div class="modal fade" id="informa" tabindex="-1" aria-labelledby="informa" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="informa">Gabriel Cichero</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/David.jpg" class="img-fluid mb-3" alt="David">
+                        <p><strong>Edad:</strong> 35 años</p>
+                        <p><strong>Trayectoria:</strong> Ex jugador de Jijantes FC Destaca por su físico y fuerza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Kilian-->
+        <div class="modal fade" id="infor" tabindex="-1" aria-labelledby="infor" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="infor">Kilian Honorato</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/Killian.jpg" class="img-fluid mb-3" alt="Kilian">
+                        <p><strong>Edad:</strong> 25 años</p>
+                        <p><strong>Trayectoria:</strong> Ex jugador de KuniSports Destaca por su regate y tiros de falta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Raúl Lao-->
+            <div class="modal fade" id="info" tabindex="-1" aria-labelledby="info" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="info">Kilian Honorato</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./img/Lao.jpg" class="img-fluid mb-3" alt="Lao">
+                            <p><strong>Edad:</strong> 28 años</p>
+                            <p><strong>Trayectoria:</strong> Ex jugador de Pio FC Destaca por su gol y regate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
